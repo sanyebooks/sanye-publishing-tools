@@ -1,0 +1,20 @@
+{
+  "name": "sanye-publishing-tools",
+  "interface": {
+    "displayName": "三野出版工具"
+  },
+  "plugins": [
+    {
+      "name": "book-selling-points",
+      "source": {
+        "source": "local",
+        "path": "./plugins/book-selling-points"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
