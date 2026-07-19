@@ -1,6 +1,6 @@
 {
   "name": "book-selling-points",
-  "version": "0.1.0",
+  "version": "0.1.0+codex.20260719130315",
   "description": "从书稿、样章、目录或图书资料中提炼有原文依据、可直接用于营销的图书卖点表。",
   "author": {
     "name": "孙三野"
@@ -8,7 +8,7 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "图书卖点拆解",
-    "shortDescription": "把书稿拆成有依据、能传播、可执行的营销卖点表",
+    "shortDescription": "孙三野的卖点拆解技能，把书稿拆成有依据、能传播、可执行的营销卖点表",
     "longDescription": "读取书稿、样章、目录、图书简介或出版资料，识别目标人群与真实购买理由，生成带书内依据、页码线索、营销优先级和人群圈层的卖点表。",
     "developerName": "孙三野",
     "category": "Productivity",
