@@ -1,0 +1,4 @@
+interface:
+  display_name: "图书卖点拆解"
+  short_description: "从书稿中提炼有原文依据、可直接用于营销的图书卖点表"
+  default_prompt: "使用 $book-selling-points 将这本书拆解成有页码和人群圈层依据的营销卖点表。"
