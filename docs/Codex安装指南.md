@@ -1,0 +1,86 @@
+# 安装指南
+
+官方 GitHub 仓库：https://github.com/sanyebooks/sanye-publishing-tools
+
+请只从上述仓库或孙三野直接发送的试用包安装。
+
+## 使用条件
+
+- 已安装并登录支持 Plugin/Skill 的 Codex。
+- 有权限在本机安装 Plugin。
+- 试用书稿已经保存在电脑中。
+
+## 推荐安装方式（最稳定）
+
+1. 将整个试用包解压到一个固定位置，不要只取出其中某个文件。
+2. 确认解压后的根目录中同时存在 `.agents` 和 `plugins` 两个文件夹。
+3. 打开终端。Mac 使用“终端”，Windows 使用 PowerShell。
+4. 添加本地 Marketplace。把下面的路径替换为客户电脑上的实际解压路径：
+
+```bash
+codex plugin marketplace add "/实际路径/sanye-publishing-tools-release-v1.0.0"
+```
+
+Windows 示例：
+
+```powershell
+codex plugin marketplace add "C:\实际路径\sanye-publishing-tools-release-v1.0.0"
+```
+
+5. 安装 Plugin：
+
+```bash
+codex plugin add book-selling-points@sanye-publishing-tools
+```
+
+6. 检查安装结果：
+
+```bash
+codex plugin list
+```
+
+7. 重新打开 Codex，并新建一个任务，让新任务加载最新 Plugin。
+
+如果客户所用版本在 Plugin 管理页面提供“添加本地 Marketplace”，也可以选择解压后的试用包根目录。不同版本的界面入口可能不同，命令行方式更稳定。
+
+如果出现 `codex: command not found` 或“无权安装”，说明客户电脑尚未提供 Codex 命令行或安装被单位策略限制，应联系其管理员，不要绕过安全策略。
+
+## 验证是否安装成功
+
+新建任务后输入：
+
+> 你现在能使用“图书卖点拆解”吗？请只告诉我它能做什么，不要开始生成。
+
+如果回答中提到“有原文依据、页码、星级、人群圈层和 Excel”，说明安装成功。
+
+## 第一次正式试用
+
+1. 新建任务。
+2. 上传一本 PDF 或 Word 书稿。
+3. 输入：
+
+> 使用图书卖点拆解，把这本书拆成30条营销卖点。采用正文页码，输出Excel，并按核心层、扩展层、潜力层标注读者。
+
+4. 检查生成文件中的“卖点表”“圈层与使用说明”“图书事实卡”。
+
+## 常见问题
+
+### 看不到插件
+
+确认没有改变试用包内部目录结构，并重新打开 Codex。更新或重新安装后，建议新建任务测试。
+
+### 只有 Skill 文件，无法安装
+
+不要单独发送 `SKILL.md`。安装时应保留完整试用包，特别是 `.codex-plugin/plugin.json`、`skills/` 和 Marketplace 配置。
+
+### 没有准确页码
+
+可能是扫描版 PDF、节选材料或文档没有稳定页码。可补充带正文页码的版本，或者要求输出“章节＋位置线索”。
+
+### 内容包含剧透
+
+在提示中增加：“预热期使用，不披露关键死亡和最终结局。”
+
+### 公司电脑不允许安装
+
+请联系本单位管理员。不要绕过单位的安全与书稿保密政策。
