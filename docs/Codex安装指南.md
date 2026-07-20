@@ -18,13 +18,13 @@
 4. 添加本地 Marketplace。把下面的路径替换为客户电脑上的实际解压路径：
 
 ```bash
-codex plugin marketplace add "/实际路径/sanye-publishing-tools-release-v1.0.1"
+codex plugin marketplace add "/实际路径/sanye-publishing-tools-release-v1.0.2"
 ```
 
 Windows 示例：
 
 ```powershell
-codex plugin marketplace add "C:\实际路径\sanye-publishing-tools-release-v1.0.1"
+codex plugin marketplace add "C:\实际路径\sanye-publishing-tools-release-v1.0.2"
 ```
 
 5. 安装 Plugin：

@@ -5,7 +5,7 @@
 1. 打开 WorkBuddy，进入“技能”。
 2. 点击“添加技能”。
 3. 选择“上传技能”。
-4. 上传 `book-selling-points-workbuddy-skill-v1.0.1.zip`。
+4. 上传 `book-selling-points-workbuddy-skill-v1.0.2.zip`。
 5. 安装后确认“图书卖点拆解”处于启用状态。
 6. 新建任务，上传一本可以用于测试的 PDF 或 Word 书稿。
 7. 输入：
