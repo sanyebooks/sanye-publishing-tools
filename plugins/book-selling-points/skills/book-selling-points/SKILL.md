@@ -1,6 +1,6 @@
 ---
 name: book-selling-points
-description: Generate source-backed book marketing selling-point tables from manuscripts, book introductions, tables of contents, sample chapters, PDFs, Word documents, screenshots, or pasted book material. Use when the user asks to 拆书、提炼图书卖点、生成卖点表、分析目标读者、制作新书营销素材、小红书种草文案、图书推广图像提示词，或把一本书拆成带有网感化标题、书内依据、页码、星级和人群圈层的 Excel/CSV/表格。
+description: 孙三野的图书卖点拆解技能，从书稿、简介、目录、样章、PDF、Word、截图或粘贴材料中生成有原文依据、页码线索、星级和人群圈层的图书营销卖点表。当用户要求拆书、提炼图书卖点、生成卖点表、分析目标读者、制作新书营销素材、小红书种草文案或图书推广图像提示词时使用。
 ---
 
 # 图书卖点拆解
@@ -10,7 +10,7 @@ description: Generate source-backed book marketing selling-point tables from man
 ## 开始前
 
 1. 读取 `references/input-and-evidence.md`，确认材料是否足以支撑卖点与页码。
-2. 读取 `references/output-standard.md`，遵守字段、圈层、星级和文案标准。
+2. 读取 `references/output-standard.md`，遵守字段、圈层、星级、标题长度和文案标准。
 3. 当用户要求 Excel 时，使用可用的电子表格能力创建、检查并渲染工作簿。
 4. 不因材料不足停止全部工作；标明证据强弱和待核位置，并说明需要补充什么。
 
@@ -66,7 +66,7 @@ description: Generate source-backed book marketing selling-point tables from man
 
 ### 6. 生成渠道内容
 
-仅在用户需要时生成小红书文案和4张图提示词。文案应从卖点和原文证据生长出来，不得批量套用同一个开头、结构或结尾。
+仅在用户需要时生成小红书文案和4张图提示词。文案应从卖点和原文证据生长出来，不得批量套用同一个开头、结构或结尾。小红书标题必须遵守 `references/output-standard.md` 中的20字上限与计数口径。
 
 ### 6.1 小说剧透控制
 
@@ -85,6 +85,7 @@ description: Generate source-backed book marketing selling-point tables from man
 - 页码是否真实；无法确认时是否标成 `待核页码：章节/位置线索`。
 - 是否存在换词不换意的重复项。
 - 标题是否夸大或超出书稿证据。
+- 每个 `网感化后的标题`是否不超过20个可见字符；超长项必须重写后再交付。
 - 核心层比例和星级分布是否合理。
 - Excel 是否冻结表头、自动换行、列宽可读并设置数据验证。
 - 是否已经渲染并目视检查主表和至少一个内容页。
@@ -97,3 +98,4 @@ description: Generate source-backed book marketing selling-point tables from man
 - 不得把章节标题简单改写成营销卖点。
 - 不得把营销判断伪装成已验证的市场事实。
 - 不得为了标题冲击力歪曲原意。
+- 不得用删掉第21个字符以后内容的方式处理超长标题；必须重写。

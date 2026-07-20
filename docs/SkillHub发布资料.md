@@ -4,7 +4,7 @@
 - Skill 目录：`skills/book-selling-points`
 - Slug：`book-selling-points`
 - 显示名称：`图书卖点拆解`
-- 版本：`1.0.0`
+- 版本：`1.0.1`
 - 分类：`内容创作`
 - 作者：`孙三野`
 
