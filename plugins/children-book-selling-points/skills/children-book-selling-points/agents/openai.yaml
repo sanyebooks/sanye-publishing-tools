@@ -1,0 +1,4 @@
+interface:
+  display_name: "图书卖点拆解（童书版）"
+  short_description: "按分龄、家长痛点和童书标题公式生成有依据的营销卖点表"
+  default_prompt: "使用 $children-book-selling-points，把这本童书拆成30条有原文依据、适读年龄明确的营销卖点并生成 Excel。"

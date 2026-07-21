@@ -1,16 +1,19 @@
-# 孙三野出版工具
+# 三野出版工具
 
 面向出版社编辑、图书营销、发行和新媒体团队的 AI 出版工具集。
 
-当前已发布「图书卖点拆解」：孙三野的图书营销卖点拆解技能。读取 PDF、Word、目录、样章或图书简介，生成有原文依据、页码线索、营销优先级和人群圈层的卖点表，并可输出 Excel。
+当前已发布「图书卖点拆解」，并新增独立的「图书卖点拆解（童书版）」。两个 Skill 都能读取 PDF、Word、目录、样章或图书简介，生成有原文依据、页码线索、营销优先级和人群圈层的卖点表，并可输出 Excel。童书版额外支持分龄、家长痛点和童书标题公式。
 
 ## 三平台目录
 
 | 平台 | 目录 | 用途 |
 |---|---|---|
 | Codex | `plugins/book-selling-points/` | Codex Plugin 与 Marketplace |
+| Codex | `plugins/children-book-selling-points/` | 童书版 Codex Plugin 与 Marketplace |
 | WorkBuddy | `workbuddy/plugins/book-selling-points/` | WorkBuddy Plugin |
+| WorkBuddy | `workbuddy/plugins/children-book-selling-points/` | 童书版 WorkBuddy Plugin |
 | SkillHub | `skills/book-selling-points/` | SkillHub 从 GitHub 导入的标准 Skill |
+| SkillHub | `skills/children-book-selling-points/` | 童书版标准 Skill |
 
 三个版本共享同一套卖点拆解标准，但使用各平台对应的清单和目录结构。
 
@@ -26,6 +29,8 @@
 ## 快速测试
 
 > 使用图书卖点拆解，把这本书拆成 30 条有书内依据的营销卖点，标注页码、星级和人群圈层，并生成 Excel。
+
+> 使用图书卖点拆解（童书版），把这本童书拆成 30 条有书内依据、适读年龄明确的营销卖点，并生成 Excel。
 
 ## 文档
 
