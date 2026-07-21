@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import re
 import sys
 from pathlib import Path
 
@@ -14,6 +15,7 @@ MAIN_SHEET = "卖点表"
 CONTENT_SHEET = "小红书笔记&图像提示词"
 TITLE_HEADER = "网感化后的标题"
 INDEX_HEADER = "序号"
+AGE_RANGE_PATTERN = re.compile(r"\d+\s*(?:[-—–~～]|至|到)\s*\d+\s*岁")
 
 
 def visible_length(value: object) -> int:
@@ -51,6 +53,10 @@ def validate(path: Path, max_length: int) -> list[str]:
             continue
         if "\n" in title or "\r" in title:
             errors.append(f"{MAIN_SHEET}!R{row}: 标题含换行")
+        if AGE_RANGE_PATTERN.search(title):
+            errors.append(
+                f"{MAIN_SHEET}!R{row}: 标题使用宽泛年龄范围，应改为单点年龄与具体孩子画像: {title}"
+            )
         length = visible_length(title)
         if length > max_length:
             errors.append(
@@ -114,7 +120,10 @@ def main() -> int:
             print(f"- {error}")
         return 1
 
-    print(f"PASS: 主表标题全部≤{args.max_length}个可见字符，Sheet3标题与主表一致")
+    print(
+        f"PASS: 主表标题全部≤{args.max_length}个可见字符且无宽泛年龄范围，"
+        "Sheet3标题与主表一致"
+    )
     return 0
 
 
