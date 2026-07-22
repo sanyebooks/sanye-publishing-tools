@@ -1,4 +1,4 @@
 interface:
   display_name: "图书竞品分析"
-  short_description: "检索小红书与抖音，拆解爆款、营销节奏、反馈及达人名单"
+  short_description: "孙三野的图书竞品分析：拆解爆款、营销节奏、反馈及达人名单"
   default_prompt: "使用 $book-competitor-analysis 分析指定图书在小红书和抖音上的营销竞品，并输出可复核的 Excel。"
