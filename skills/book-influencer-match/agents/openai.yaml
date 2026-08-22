@@ -1,0 +1,4 @@
+interface:
+  display_name: "达人推书内容结合点分析"
+  short_description: "登录浏览达人近期高流量内容与评论，寻找有证据的推书结合点"
+  default_prompt: "使用 $book-influencer-match 调用浏览器分析这个达人账号，优先寻找近期、高流量且与图书高度相关的内容，给出有原链接、评论证据和书中依据的推广结合点。"
