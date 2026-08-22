@@ -1,0 +1,4 @@
+interface:
+  display_name: "图书用户买点场景分析"
+  short_description: "深读书稿与封面，提炼首批xhs用户购买场景和测试假设"
+  default_prompt: "使用 $book-buyer-scenario-analysis 分析这份书稿和封面，输出首批值得在xhs测试的用户买点场景。"
