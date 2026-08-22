@@ -1,0 +1,4 @@
+interface:
+  display_name: "图书选题评估7问法"
+  short_description: "孙三野的图书选题评估技能，识别致命短板并给出推进建议"
+  default_prompt: "使用 $book-topic-evaluator 评估这个图书选题，并生成有证据依据的七问打分表。"
