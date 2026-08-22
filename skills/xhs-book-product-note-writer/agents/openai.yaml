@@ -1,0 +1,4 @@
+interface:
+  display_name: "xhs图书商品笔记初稿"
+  short_description: "读取买点报告，为全部首批场景逐一生成可编辑的xhs图书商品笔记初稿"
+  default_prompt: "使用 $xhs-book-product-note-writer 读取这份图书买点场景分析报告，为所有首批测试场景逐一生成完整商品笔记初稿。"
